@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"  defer></script>
+    <title>TP DOM</title>
+</head>
+<body>
+    <header>
+        <h1> Création de profil</h1>
+    </header>
+    <section>
+        <button id="change-description" class="change-description-btn">
+            Changer de description
+        </button>
+    </section>
+    <section>
+        <form>
+            <fieldset>
+            <legend>Choisissez votre pseudo</legend>
+              <label for="pseudo-input">Votre pseudo :</label>
+                <input type="text" id="pseudo-input" placeholder="Entrez votre pseudo (lettres uniquement)">
+                <div id="pseudo-error" class="error-message">
+                    Le pseudo ne doit contenir que des lettres (minimum 3 caractères)
+                </div>
+            </fieldset>
+
+
+            <fieldset class="avatars-container">
+
+            <legend>Choisissez votre avatar</legend>
+
+<input type="radio" name="avatar" value="alastor" id="avatar1" checked>
+<input type="radio" name="avatar" value="niffty" id="avatar2">
+<input type="radio" name="avatar" value="avatar3" id="avatar3">
+
+<label for="avatar1">
+    <img src="assets/alastor.webp" alt="Avatar Alastor" class="avatar-option">
+</label>
+<label for="avatar2">
+    <img src="assets/niffty.jpg" alt="Avatar Niffty" class="avatar-option">
+</label>
+<label for="avatar3">
+    <img src="assets/sirPentious.webp" alt="Avatar Sir Pentious" class="avatar-option">
+</label>
+</fieldset>
+
+<input type="submit" value="Suivant">
+
+        </form>
+    </section>
+    <main>
+<aside>
+    <button id="darkmode__toggle"><span id="theme-icon">☀️</span>
+        <span id="theme-text">Clair</span>
+    </button>
+</aside>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
