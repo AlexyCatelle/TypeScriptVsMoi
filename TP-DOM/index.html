@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"  defer></script>
+    <script src="index.js" defer></script>
     <title>TP DOM</title>
 </head>
-<body>
+<body class="light-theme">
     <header>
         <h1> Création de profil</h1>
     </header>
     <section>
+        <div id="description-text">
+            Chargement de votre description...
+        </div>
         <button id="change-description" class="change-description-btn">
             Changer de description
         </button>
@@ -47,7 +50,7 @@
 </label>
 </fieldset>
 
-<input type="submit" value="Suivant">
+<input type="submit" value="Suivant" id="submit-btn" disabled>
 
         </form>
     </section>
